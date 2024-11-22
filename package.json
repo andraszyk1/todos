@@ -1,0 +1,23 @@
+{
+  "name": "todo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start":"npm-run-all --parallel dev server",
+    "server": "json-server --watch db.json --host 127.0.0.1 --port 4000 --static 'public'"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.4",
+    "axios": "^1.7.7",
+    "json-server": "^1.0.0-beta.3"
+  }
+}
