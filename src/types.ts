@@ -5,6 +5,10 @@ export enum Category  {
     SCHOPPING="zakupy",
     HOUSE="dom",
 }
+export enum Mode  {
+    PROD="PROD",
+    DEV="DEV",
+}
 export type Task = {
     id:string;
     name: string;
